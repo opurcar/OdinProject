@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class ="master-container"></div>
+        <div class="app-container">
+            <aside>
+                <h1>Project Library</h1>
+                <p>Use the form below to add a book</p>
+                <form id="bookForm" action="#" method="post" onsubmit="submitForm(event)">
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" name="bookTitle" placeholder="The Lord of the Rings" required>
+            
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" placeholder="JRR Tolkien" required>
+            
+                    <label for="numPages">Number of Pages:</label>
+                    <input type="number" id="numPages" name="numPages" placeholder="500" required>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </aside>
+            <main>
+                <h2>Book List</h2>
+            </main>
+            </div>
+        </div>
+    </div>
+</body>
+<script src = "script.js"></script>
+</html>
