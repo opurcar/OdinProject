@@ -12,7 +12,6 @@ function addBookToLibrary(book, author, pages) {
     myLibrary.push(newBook);
 }
 
-
 function submitForm(event) {
     event.preventDefault(); // Prevent the form from submitting in the traditional way
 
@@ -38,19 +37,15 @@ function submitForm(event) {
 
 const myLibrary = [];
 
+function displayBooks(){
 
-// function to display books in the table
-function displayBooks() {
     const tableBody = document.querySelector('table tbody');
-    
-    // Clear existing rows in the table
+
     tableBody.innerHTML = '';
 
-    // Loop through the myLibrary array and add each book to the table
     myLibrary.forEach((book, index) => {
-        const row = tableBody.insertRow(); // Create a new row
+        const row = tableBody.insertRow();
 
-        // Insert cells for book title, author, number of pages, and a remove button
         const titleCell = row.insertCell(0);
         const authorCell = row.insertCell(1);
         const pagesCell = row.insertCell(2);
@@ -60,13 +55,13 @@ function displayBooks() {
         authorCell.textContent = book.author;
         pagesCell.textContent = book.pages;
 
-        // Create a remove button and attach a click event to remove the book from the library
-        const removeButton = document.createElement('button');
+        const removeButton = document.createElement('button')
         removeButton.textContent = 'Remove';
         removeButton.addEventListener('click', () => removeBook(index));
-        removeCell.appendChild(removeButton);
-    });
+        removeCell.appendChild(removeButton);        
+    })
 }
+
 
 // function to remove a book from the library
 function removeBook(index) {
