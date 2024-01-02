@@ -6,6 +6,7 @@ const gameBoard = [
     ['', '', ''],  
 ];
 
+
 function playGame() {
        
         const userChoice = prompt('Choose a position on the board:');
