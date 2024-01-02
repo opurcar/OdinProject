@@ -1,0 +1,38 @@
+/* This is the main css file for the project */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: rgb(248, 243, 243);
+}
+
+
+/* This is the main container for the app */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+  background: rgb(248, 243, 243);
+}
+
+/* This is the container for the input */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* This is the container for the output */
+.output-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
